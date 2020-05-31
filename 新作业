@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    	
+/*重置浏览器样式*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*清除浮动*/
+.clear:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.special{
+	position:absolute;
+	right: 100px
+}
+.header {}
+
+.header-top {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid rgba(218, 218, 218, 1);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-info {
+    float: right;
+}
+
+.header-info li {
+    margin-left: 27px;
+    float: left;
+}
+
+.header-info a {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 1);
+}
+
+.iphone {
+    padding-left: 17px;
+    background: url(../images/iphone.png) no-repeat left center;
+}
+
+.weixin {
+    padding-left: 24px;
+    background: url(../images/weixin.png) no-repeat left center;
+}
+
+.header-bottom {
+    height: 100px;
+}
+
+.logo {
+    /*margin-top:14px;*/
+    padding-top: 30px;
+    float: left;
+}
+
+.nav {
+    float: left;
+    margin-top: 38px;
+}
+
+.nav li {
+    float: left;
+    width: 122px;
+    text-align: center;
+    border-right: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.nav .last {
+    border: none;
+}
+
+.nav a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.form {
+    float: right;
+    margin-top: 34px;
+}
+
+.search {
+    float: left;
+    width: 145px;
+    padding: 9px;
+    border: 1px solid rgba(208, 61, 61, 1);
+}
+
+.submit {
+    float: left;
+    width: 36px;
+    height: 36px;
+    border: 1px solid 
+    
+     center center;
+}
+
+
+
+.banner  {
+    width: 100%;
+    background-color: #ddd;
+    height: 500px;
+    width: 1600px;
+    position: absolute;
+    top:140px;
+    bottom: 120px;
+}
+
+.banner-one {
+    background: url(../images/banner2.png) no-repeat center center;
+}
+
+.banner-two {
+    background: url(../images/banner1.png) no-repeat center center;
+}
+
+.text {
+   width: 100%;
+    height: 500px;
+    width: 1600px;
+    position: absolute;
+    top:0px;
+    bottom: 120px;
+    z-index: 1
+}
+
+.prev,
+.next {
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    top: 220px;
+    left: 8%;
+}
+
+.next {
+    left: auto;
+    right: 8%;
+}
+
+.title {
+    text-align: center;
+    padding-top: 106px;
+    height: 104px;
+}
+
+.title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(32, 32, 32, 1);
+    background: url(../images/bg-title.png) no-repeat center;
+}
+
+.title .small {
+    font-size: 20px;
+    padding-top: 15px;
+}
+.all li:hover>a{
+  color: blue;
+
+}
+.all{
+	z-index: 2;
+
+}
+
+
+.bottom{
+	width:1917px;
+	height: 420px;
+	background-color: #fff;
+	margin-top: 73px;
+	float: left;
+}
+
+.bottom-div1{
+	width: 380px;
+	height: 160px;
+	margin: 150px 0 140px 380px;
+	float: left;
+}
+
+.bottom-div1-p1{
+	width:150px;
+	height:36px;
+	font-size:36px;
+	font-family:Microsoft YaHei;
+	font-weight:bold;
+	color:rgba(0,164,255,1);
+	line-height:21px;
+}
+
+.bottom-div1-p2{
+	width:380px;
+	height:12px;
+	font-size:12px;
+	font-family:SimSun;
+	font-weight:400;
+	color:rgba(102,102,102,1);
+	line-height:18px;
+	margin: 35px 0 47px;
+}
+
+.bottom-div1-a{
+	font-size:16px;
+	font-family:Microsoft YaHei;
+	font-weight:400;
+	color:rgba(0,164,255,1);
+	line-height:18px;
+	padding:10px 30px;
+	border: 1px solid #00A4FF;
+}
+
+.bottom-div2{
+	width: 85px;
+	height: 130px;
+	margin: 130px 150px 160px 270px;
+	display: inline-block;
+	float: left;
+}
+
+.bottom-div2-p{
+	width:80px;
+	height:17px;
+	font-size:16px;
+	font-family:Microsoft YaHei;
+	font-weight:400;
+	color:rgba(51,51,51,1);
+	line-height:21px;
+	margin-bottom:8px ;
+}
+
+.bottom-a{
+	font-size:12px;
+	font-family:SimSun;
+	font-weight:400;
+	color:rgba(51,51,51,1);
+	line-height:21px;
+}
+
+.bottom{
+	font-size:12px;
+	font-family:SimSun;
+	font-weight:400;
+	color:rgba(51,51,51,1);
+	line-height:21px;
+	margin-top: 20px;
+}
+
+.bottom li{
+	margin-bottom: 7px
+}
+
+.div3{
+	width: 100px;
+	height: 130px;
+	margin: 130px 110px 160px 0;
+	display: inline-block;
+	float: left;
+}
+
+.div4{
+	width: 65px;
+	height: 130px;
+	margin: 130px 360px 220px 0;
+	display: inline-block;
+	float: left;
+}
+    </style>	
+</head>
+
+<body>
+    
+        <div class="header-bottom">
+            <div class="container clear">
+                <img src="K__{$B9O(T]B8Y{`LY1TR_I.png" alt="logo图" class="logo" />
+                <ul class="nav clear">
+                    <li class="first"><a href="#">首页</a></li>
+                    <li><a href="#">课程</a></li>
+                    <li><a href="#">职业规划</a></li>
+                    <li class="special"><a href="#">个人中心</a></li>
+                    
+                   
+                </ul>
+                <form class="form clear">
+                    <input type="text" placeholder="输入关键词" class="search" />
+                    <img src="fa-search@2x.png" type="button" class="submit" />
+                    </form>
+            </div>
+        </div>
+    </div>
+    <ul class="second">
+                    <li ><a href="#" class="first">精品推荐</a></li>
+                    <li><a href="#" class="first">JQuery</a></li>
+                    <li><a href="#" class="first">MYSQL</a></li>
+                    <li><a href="#" class="first">javaweb</a></li>
+                    <li><a href="#" class="first">MYSQL</a></li>
+                    <li><a href="#" class="first">javaweb</a></li>
+                    <li class="special2"><a href="#" >修改兴趣</a></li>
+                    
+                    
+                   
+                </ul>
+    <div class="banner">
+        <ul>
+            <li <a href="#" class="all">前端开发    ></a>
+            </li>
+           <li <a href="#" class="all">后端开发  ></a>
+            </li>
+            
+            <li <a href="#" class="all">移动开发   ></a>
+            </li>
+            <li <a href="#" class="all">人工智能      ></a>
+            </li>
+            <li <a href="#" class="all">商业预测    ></a>
+            </li>
+            <li <a href="#" class="all">云计算&大数据   ></a>
+            </li>
+            <li <a href="#" class="all">运维&测试   ></a>
+            </li>
+            
+            <li <a href="#" class="all">UI设计     ></a>
+            </li>
+           <li <a href="#" class="all">产品    ></a>
+            </li>
+            <img src="banner2@2x.png" class="text"/>
+            
+        </ul>
+        
+    
+    </div>
+   
+      
+    </div>
+    <div class="bottom">
+    	<ul class="div2">
+    		<p class="p1">关于雪梨网</p>
+    	<li><a href="#">关于</a></li>
+    	<li><a href="#">管理团队</a></li>
+    	<li><a href="#">工作机会</a></li>
+    	<li><a href="#">客户服务</a></li>
+    	<li><a href="#">帮助</a></li>
+    	</ul>
+    	<ul class="div3">
+    		<p class="p2">新手指南</p>
+    	<li><a href="#">如何注册</a></li>
+    	<li><a href="#">如何选课</a></li>
+    	<li><a href="#">如何拿到毕业证</a></li>
+    	<li><a href="#">学分是什么</a></li>
+    	<li><a href="#">考试未通过怎么办</a></li>
+    	</ul>
+    	<ul class="div4">
+    		<p class="p3">合作伙伴</p>
+    	<li><a href="#">合作机构</a></li>
+    	<li><a href="#">合作导师</a></li>
+    	
+    	</ul>
+    </div>
+</body>
+
+</html>
